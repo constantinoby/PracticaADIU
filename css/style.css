@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.chart {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(148, 228, 255);
+    color: grey;
+    text-align: right;
+    height: 1.5rem;  
+  }
+
+.quoteContainer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 50px;
+    width: 80%;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.quote {
+    text-align: center;
+    margin-top: auto;
+    font-family: "Bradley Hand ITC";
+    font-size: 50px;
+}
+
+#number {
+    margin-top: 10px;
+    font-family: "Bradley Hand ITC";
+    font-size: 35px;
+}
+
+#text {
+    font-family: "Bradley Hand ITC";
+    text-align: center;
+    font-size: 20px;
+}
+
+.social {
+    position: absolute;
+    /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+    left: 0;
+    /* Establecemos la barra en la izquierda */
+    top: 700px;
+    z-index: 2000;
+    /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social ul li a {
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    /* Establecemos una transición a todas las propiedades */
+}
+
+.social ul li .orange {
+    background: #d95232;
+}
+
+.social ul li .blue {
+    background: #1d18ae;
+}
+
+.social ul li .grey {
+    background: #666666;
+}
+
+.social ul li a:hover {
+    background: #c0bcbc22;
+    /* Cambiamos el fondo cuando el usuario pase el mouse */
+    padding: 10px 30px;
+    /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+}
