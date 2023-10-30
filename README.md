@@ -1,4 +1,4 @@
-# Practica ADIU
+# Práctica de Aplicaciones Distribuidas a Internet y Interficies de Usuario
 
 Los autores de esta página son:
 Juan José Marí y Constantino Byelov Serdiuk
