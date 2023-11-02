@@ -92,11 +92,9 @@ Para acabar representamos la información recogida de la petición por pantalla 
 
 ### Contacto
 
-Por último....
+Se han añadido unos botones interactivos que al ser clickados llevan al usuario a nuestros perfiles de LinkedIn, GitHub y también pueden mandarnos un mail. 
 
 <img src="readMeFiles/social.png">
-
-
 
 
 ## Dificultades e Intereses
