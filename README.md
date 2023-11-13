@@ -94,8 +94,174 @@ Para acabar representamos la información recogida de la petición por pantalla 
 
 Se han añadido unos botones interactivos que al ser clickados llevan al usuario a nuestros perfiles de LinkedIn, GitHub y también pueden mandarnos un mail. 
 
-<img src="readMeFiles/social.png">
+Mediante el siguiente código CSS, se ha podido hacer que los botones estén en una posición absoluta en la pagina y tengan animaciones al momento de poner el ratón encima de dichos botones:
 
+```
+.social {
+    position: absolute;
+    left: 0;
+    top: 700px;
+    z-index: 2000;
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social ul li a {
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.social ul li .orange {
+    background: #d95232;
+}
+
+.social ul li .blue {
+    background: #1d18ae;
+}
+
+.social ul li .grey {
+    background: #666666;
+}
+
+.social ul li a:hover {
+    background: #c0bcbc22;
+    padding: 10px 30px;
+}
+```
+
+Además, en el código de nuestra página en HTML se añade lo siguiente:
+
+```
+<div class="social">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/constantino-byelov-serdiuk-37232a87/" target="_blank"
+                    class="blue"><img src="media/linkedin-svgrepo-com.svg" width="30" height="30" alt=""></a>
+            </li>
+            <li><a href="https://github.com/constantinoby" onclick="window.open('https://github.com/JJMari');
+                return true;" target="_blank" class="grey"><img src="media/github-svgrepo-com.svg" width="30"
+                        height="30" alt=""></a>
+            </li>
+            <li><a href="mailto:csbyelov@gmail.com, marijuanjo249@gmail.com" class="orange"><img
+                        src="media/mail-plus-svgrepo-com.svg" width="30" height="30" alt=""></a></li>
+        </ul>
+    </div>
+```
+
+Como resultado principal el conjunto nos da los botones que podemos ver a continuación: 
+
+<p align="center">
+  <img src="readMeFiles/social.png">
+</p>
+
+### Fondo animado
+
+Se ha hecho un fondo animado en CSS.
+
+CSS:
+```
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgb(98, 77, 217);
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.small {
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  bottom: -100px;
+}
+
+.medium {
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  bottom: -200px;
+}
+
+.large {
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  bottom: -300px;
+}
+
+.xlarge {
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  bottom: -400px;
+}
+
+.xxlarge {
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  bottom: -500px;
+}
+
+.shade1 {
+  opacity: 0.2;
+}
+
+.shade2 {
+  opacity: 0.5;
+}
+
+.shade3 {
+  opacity: 0.7;
+}
+
+.shade4 {
+  opacity: 0.8;
+}
+
+.shade5 {
+  opacity: 0.9;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.4);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(0.3);
+  }
+}
+```
+
+
+HTML:
+```
+  <div class="ripple-background">
+        <div class="circle xxlarge shade1"></div>
+        <div class="circle xlarge shade2"></div>
+        <div class="circle large shade3"></div>
+        <div class="circle mediun shade4"></div>
+        <div class="circle small shade5"></div>
+    </div>
+```
+
+Como resultado sale:
+
+![](animacion.gif)
 
 ## Dificultades e Intereses
+Una de las mayores dificultades ha sido manipular los datos mediante JavaScript de la base de datos para que el Highchart pueda entenderlos y representarlos graficamente.
 
+Este proyecto proporcionó una oportunidad invaluable para el aprendizaje continuo. La necesidad de integrar nuevas tecnologías y abordar problemas específicos del dominio nos impulsó a adquirir conocimientos adicionales. 

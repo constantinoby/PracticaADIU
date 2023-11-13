@@ -1,3 +1,6 @@
+/*-------------------------------------------------------------------
+                Relacionado con las gráficas
+-------------------------------------------------------------------*/
 .container {
     display: flex;
     flex-direction: row;
@@ -8,6 +11,9 @@
     margin: 10px;
 }
 
+/*-------------------------------------------------------------------
+                        Pie de pagina
+-------------------------------------------------------------------*/
 .footer {
     left: 0;
     bottom: 0;
@@ -15,9 +21,12 @@
     background-color: rgb(148, 228, 255);
     color: grey;
     text-align: right;
-    height: 1.5rem;  
-  }
+    height: 1.5rem;
+}
 
+/*-------------------------------------------------------------------
+                    Relacionado con la API
+-------------------------------------------------------------------*/
 .quoteContainer {
     display: flex;
     flex-direction: column;
@@ -48,14 +57,14 @@
     font-size: 20px;
 }
 
+/*-------------------------------------------------------------------
+        Relacionado con los botones de las redes sociales
+-------------------------------------------------------------------*/
 .social {
     position: absolute;
-    /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
     left: 0;
-    /* Establecemos la barra en la izquierda */
     top: 700px;
     z-index: 2000;
-    /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
 }
 
 .social ul {
@@ -71,7 +80,6 @@
     -webkit-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
-    /* Establecemos una transición a todas las propiedades */
 }
 
 .social ul li .orange {
@@ -88,7 +96,5 @@
 
 .social ul li a:hover {
     background: #c0bcbc22;
-    /* Cambiamos el fondo cuando el usuario pase el mouse */
     padding: 10px 30px;
-    /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
 }
