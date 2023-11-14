@@ -167,33 +167,10 @@ Se ha hecho un fondo animado en CSS.
 
 CSS:
 ```
-body, html {
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
-}
-
-.background-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* Envía el fondo al fondo del apilamiento */
-}
-
-.ripple-background {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1; /* Envía el fondo al fondo del apilamiento */
-}
-
 .circle {
   position: absolute;
   border-radius: 50%;
-  background: rgba(98, 77, 217, 0.75);
+  background: rgb(98, 77, 217);
   animation: ripple 15s infinite;
   box-shadow: 0px 0px 1px 0px #508fb9;
 }
@@ -266,13 +243,6 @@ body, html {
     transform: scale(0.3);
   }
 }
-
-.content {
-  /* Estilos para el contenido de la página que estará sobre el fondo animado */
-  position: relative;
-  z-index: 1; /* Asegura que el contenido esté sobre el fondo animado */
-  color: #fff; /* Ajusta el color del texto según tus preferencias */
-}
 ```
 
 
@@ -289,7 +259,7 @@ HTML:
 
 Como resultado sale:
 
-![](animacion.gif)
+![](readMeFiles/animacion.gif)
 
 ## Dificultades e Intereses
 Una de las mayores dificultades ha sido manipular los datos mediante JavaScript de la base de datos para que el Highchart pueda entenderlos y representarlos graficamente.
